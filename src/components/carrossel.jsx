@@ -16,33 +16,33 @@ export default function Carrossel() {
         }}
         style={{ width: '100%' }}
       >
-        <SplideSlide>
-          <img src="" alt="" />
+        <SplideSlide className='slide-updates'>
           <div>
-            <p>Carga inicial</p>
-            <p>Inicie a primeira carga do sistema, levando dados da origem para o destino, usando uma interface amigável.</p>
+            <img src={process.env.PUBLIC_URL + "/img/carga-inicial.png"} alt="Imagem Carga Inicial" />
+            <p className='title-slide'>Carga inicial</p>
           </div>
+          <p>Inicie a primeira carga do sistema, levando dados da origem para o destino, usando uma interface amigável.</p>
         </SplideSlide>
-        <SplideSlide>
-          <img src="" alt="" />
+        <SplideSlide className='slide-updates'>
           <div>
-            <p>Low-code</p>
-            <p>Gerencie suas sincronizações via interface, usando código somente para personalizar sua carga inicial.</p>
+            <img src={process.env.PUBLIC_URL + "/img/code-img.png"} alt="Imagem Low-Code" />
+            <p className='title-slide'>Low-code</p>
           </div>
+          <p>Gerencie suas sincronizações via interface, usando código somente para personalizar sua carga inicial.</p>
         </SplideSlide>
-        <SplideSlide>
-          <img src="" alt="" />
+        <SplideSlide className='slide-updates'>
           <div>
-            <p>Replicação</p>
-            <p>Sincronização de dados robusta e escalável com o uso do DEBEZIUM e da infraestrutura do OPENSHIFT.</p>
+            <img src={process.env.PUBLIC_URL + "/img/setas-icone.png"} alt="Imagem Replicação" />
+            <p className='title-slide'>Replicação</p>
           </div>
+          <p>Sincronização de dados robusta e escalável com o uso do DEBEZIUM e da infraestrutura do OPENSHIFT.</p>
         </SplideSlide>
-        <SplideSlide>
-          <img src="" alt="" />
+        <SplideSlide className='slide-updates'>
           <div>
-            <p>Suporte 24/7</p>
-            <p>A plataforma adota a observabilidade, envia alertas via Telegram, e-mail e outros. Está no sobreaviso para dar suporte aos times.</p>
+            <img src={process.env.PUBLIC_URL + "/img/suporte-icon.png"} alt="Imagem Suporte" />
+            <p className='title-slide'>Suporte 24/7</p>
           </div>
+          <p>A plataforma adota a observabilidade, envia alertas via Telegram, e-mail e outros. Está no sobreaviso para dar suporte aos times.</p>
         </SplideSlide>
       </Splide>
     </div>
