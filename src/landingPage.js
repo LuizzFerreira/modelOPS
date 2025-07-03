@@ -43,7 +43,7 @@ function LandingPage() {
             <Carrossel />
           </section>
           <section id='home-services'>
-            <h2>Sssserviços</h2>
+            <h2>Ssserviços</h2>
             <div className='services-container'>
               <div className='service-item'>
                 <img src="./img/DBSyncDataCapcity.png" alt="Carga inicial" />
