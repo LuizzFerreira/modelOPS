@@ -99,7 +99,11 @@ function LandingPage() {
             </section>
         </main>
         <footer>
+<<<<<<< HEAD
           <p>Rrodapé</p>
+=======
+          <p>Rodapé</p>
+>>>>>>> main
         </footer>
     </div>
   );
