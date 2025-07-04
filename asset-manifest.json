@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/modelOPS/static/css/main.02354393.css",
+    "main.js": "/modelOPS/static/js/main.bbc46b75.js",
+    "static/js/453.44d04740.chunk.js": "/modelOPS/static/js/453.44d04740.chunk.js",
+    "index.html": "/modelOPS/index.html",
+    "main.02354393.css.map": "/modelOPS/static/css/main.02354393.css.map",
+    "main.bbc46b75.js.map": "/modelOPS/static/js/main.bbc46b75.js.map",
+    "453.44d04740.chunk.js.map": "/modelOPS/static/js/453.44d04740.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02354393.css",
+    "static/js/main.bbc46b75.js"
+  ]
+}
