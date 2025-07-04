@@ -26,7 +26,7 @@ const ModelOpsAnimation = () => {
     timeoutRef.current = setTimeout(() => setStage(1), 5000);
   } else if (stage === 1) {
     // Esquerda se move por 2s
-    timeoutRef.current = setTimeout(() => setStage(2), 600);
+    timeoutRef.current = setTimeout(() => setStage(2), 700);
   } else if (stage === 2) {
     // Direita entra parada por 10s
     timeoutRef.current = setTimeout(() => setStage(3), 20000);
