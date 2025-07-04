@@ -2,18 +2,18 @@ import React, { useEffect, useRef, useState } from 'react';
 import './animation.css';
 
 const leftItems = [
-  { src: "/assets/evento.png", alt: "Eventos externos", tx: -190, ty: 120 },
-  { src: "/assets/operacao.png", alt: "Operação", tx: -190, ty: 60 },
-  { src: "/assets/planejamento.png", alt: "Planejamento", tx: -190, ty: 0 },
-  { src: "/assets/agentes.png", alt: "Agentes", tx: -190, ty: -60 },
-  { src: "/assets/agendamento.png", alt: "Agendamento", tx: -190, ty: -120 },
+  { src: process.env.PUBLIC_URL + "/iimg/planejamento.png", alt: "Eventos externos", tx: -190, ty: 120 },
+  { src: process.env.PUBLIC_URL + "/iimg/operacao.png", alt: "Operação", tx: -190, ty: 60 },
+  { src: process.env.PUBLIC_URL + "/iimg/planejamento.png", alt: "Planejamento", tx: -190, ty: 0 },
+  { src: process.env.PUBLIC_URL + "/iimg/agentes.png", alt: "Agentes", tx: -190, ty: -60 },
+  { src: process.env.PUBLIC_URL + "/iimg/agendamento.png", alt: "Agendamento", tx: -190, ty: -120 },
 ];
 
 const rightItems = [
-  { src: "/assets/gerdin.png", alt: "GERDIN/SINapse", tx: 140, ty: -60 },
-  { src: "/assets/produto_dados.png", alt: "Produto de dados", tx: 140, ty: -15 },
-  { src: "/assets/interface_usuario.png", alt: "Interface de usuário", tx: 140, ty: 15 },
-  { src: "/assets/sintegre.png", alt: "Produto SINtegre", tx: 140, ty: 60 },
+  { src: "gerdin.png", alt: "GERDIN/SINapse", tx: 140, ty: -50 },
+  { src: "produto_dados.png", alt: "Produto de dados", tx: 140, ty: -15 },
+  { src: "interface_usuario.png", alt: "Interface de usuário", tx: 140, ty: 15 },
+  { src: "sintegre.png", alt: "Produto SINtegre", tx: 140, ty: 50 },
 ];
 
 const ModelOpsAnimation = () => {
@@ -26,7 +26,7 @@ const ModelOpsAnimation = () => {
     timeoutRef.current = setTimeout(() => setStage(1), 5000);
   } else if (stage === 1) {
     // Esquerda se move por 2s
-    timeoutRef.current = setTimeout(() => setStage(2), 1000);
+    timeoutRef.current = setTimeout(() => setStage(2), 600);
   } else if (stage === 2) {
     // Direita entra parada por 10s
     timeoutRef.current = setTimeout(() => setStage(3), 20000);
