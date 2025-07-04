@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   height: 500px;
+  width: 450px;
 }
 
 .left-group,
@@ -13,6 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .left-item,
@@ -35,8 +37,9 @@ transition: transform 5s ease-in-out, opacity 0.7s;
   transform: translate(calc(-1 * var(--tx)), var(--ty));
 }
 .left-item.out {
-  opacity: 0;
+  opacity: 1;
   transform: translate(0, 0);
+  transition: opacity 0.7s ease-in-out 7s, transform 1s ease-in-out;
 }
 
 .right-item.in {
@@ -46,5 +49,9 @@ transition: transform 5s ease-in-out, opacity 0.7s;
 .right-item.out {
   opacity: 0;
   transform: translate(0, 0);
+}
+
+.right-group {
+  gap: 0;
 }
 

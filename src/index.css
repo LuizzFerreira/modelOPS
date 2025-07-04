@@ -96,7 +96,7 @@ a{
 }
 #home-container > div {
   display: flex;
-  max-width: 750px;
+  max-width: 850px;
   margin: auto;
   width: 100%;
   justify-content: space-between;
