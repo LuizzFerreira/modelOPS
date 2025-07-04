@@ -2,7 +2,7 @@
   "name": "dbsync",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://luizzferreira.github.io/DBSync",
+  "homepage": "https://luizzferreira.github.io/modelOPS",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@testing-library/dom": "^10.4.0",

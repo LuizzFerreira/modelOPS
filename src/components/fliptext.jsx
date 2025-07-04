@@ -1,5 +1,5 @@
 export default function FlipText() {
-  const texto = "DBSync";
+  const texto = "ModelOPS";
   return (
     <h1 className="flip-text">
       {texto.split("").map((letra, i) => (

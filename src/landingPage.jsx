@@ -1,22 +1,42 @@
+import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import './index.css';
+import './footer.css';
 import './components/splide.min.css';
 import Carrossel from './components/carrossel';
 import FlipText from './components/fliptext';
+import Navbar from './components/Navbar';
 
 function LandingPage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const lastScrollY = useRef(window.scrollY);
+  const [showContact, setShowContact] = useState(false);
+  
+  
+
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY < 50) {
+        setShowNavbar(true);
+        lastScrollY.current = window.scrollY;
+        return;
+      }
+      if (window.scrollY > lastScrollY.current) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+      lastScrollY.current = window.scrollY;
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (  
     <div id='body-area'>
         <header>
-          <nav className="navbar">
-            <img src={process.env.PUBLIC_URL + "/img/iconeDBSyncBlack.png"} alt="Logo" width={100} height="auto"/>
-            <ul>
-              <li><a href="#home">Início</a></li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#services">Serviços</a></li>
-              <li><a href="#contact">Contato</a></li>
-            </ul>
-          </nav>
+          <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} showNavbar={showNavbar} showContact={showContact} setShowContact={setShowContact}/>
         </header>
         <main>
           <section id="home-container">
@@ -30,12 +50,8 @@ function LandingPage() {
                   <button className='btn-container btn-container-secondary'><a href="#">Em DEV</a></button>
                 </div>
               </div>
-              <div className='img-rotate-block'>
-                <img src={process.env.PUBLIC_URL + "/img/iconeDBSync.png"} alt="Imagem dbsync" />
-                <img src={process.env.PUBLIC_URL + "/img/DBSyncDataCapcity.png"} alt="Imagem dbsync"/>
-                </div>
+              <img className='home-container-img' src={process.env.PUBLIC_URL + "/img/logo-modelOPS.jpg"} alt="Imagem dbsync" />
             </div>
-            <img className='container-backImg' src={process.env.PUBLIC_URL + "/img/iconeDBSync.png"} alt="Imagem dbsync" />
           </section>
           <section id='home-about'>
             <h2>Reaja a <span>atualizações</span> de dados</h2>
@@ -43,7 +59,7 @@ function LandingPage() {
             <Carrossel />
           </section>
           <section id='home-services'>
-            <h2>Seeerviços</h2>
+            <h2>Serviços</h2>
             <div className='services-container'>
               <div className='service-item'>
                 <img src={process.env.PUBLIC_URL + "/img/DBSyncDataCapcity.png"} alt="Carga inicial" />
@@ -96,10 +112,45 @@ function LandingPage() {
                 <img src={process.env.PUBLIC_URL + "/img/telaGestaoParametros.png"} alt="Suporte 24/7" />
               </div>
             </div>
-            </section>
+          </section>
         </main>
-        <footer>
-          <p>Rrodapé</p>
+        <footer className="footer">
+          <div className="footer-container">
+            <div className="footer-col">
+              <h4>DBSync</h4>
+            </div>
+            <div className="footer-col">
+              <h4>Documentação</h4>
+              <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Readme</a></li>
+                <li><a href="#">Arquitetura</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contribua</a></li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>Support</h4>
+              <ul>
+                <li>
+                  <span className="footer-label">TOLL FREE</span><br />
+                    <a href="tel:+55217392818">+55 (21) 739-2818</a>
+                </li>
+                <li>
+                  <span className="footer-label">CLOUD WORKFLOW SUPPORT</span><br />
+                    <a href="mailto:support-ipaas@mydbsync.com">support-ipaas@mydbsync.com</a>
+                </li>
+                <li>
+                  <span className="footer-label">SAAS REPLICATION SUPPORT</span><br />
+                    <a href="mailto:support-cdm@mydbsync.com">support-cdm@mydbsync.com</a>
+                </li>
+                <li>
+                  <span className="footer-label">CONTACT SALES</span><br />
+                    <a href="mailto:sales@mydbsync.com">sales@mydbsync.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </footer>
     </div>
   );
