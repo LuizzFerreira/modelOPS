@@ -2,9 +2,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import './App.css';
 import './index.css';
 import './footer.css';
+import './components/animation.css';
 import './components/splide.min.css';
 import Carrossel from './components/carrossel';
 import FlipText from './components/fliptext';
+import Animation from './components/animation';
 import Navbar from './components/Navbar';
 
 function LandingPage() {
@@ -43,14 +45,13 @@ function LandingPage() {
             <div>
               <div className='home-container-text'>
                 <FlipText />
-                <p className='sub-title'>Gerencie as replicações para suas bases de dados.</p>
-                <a href="#">Leia nossa Wiki</a>
+                <p className='sub-title'>Governança, automação e gestão completa de modelos inteligentes.</p>
                 <div>
                   <button className='btn-container'><a href="#">Faturas Atuais</a></button>
                   <button className='btn-container btn-container-secondary'><a href="#">Em DEV</a></button>
                 </div>
               </div>
-              <img className='home-container-img' src={process.env.PUBLIC_URL + "/img/logo-modelOPS.jpg"} alt="Imagem dbsync" />
+              <Animation />
             </div>
           </section>
           <section id='home-about'>

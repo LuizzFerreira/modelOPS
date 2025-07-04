@@ -1,0 +1,50 @@
+.modelops-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+.left-group,
+.right-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-item,
+.right-item {
+  width: 80px;
+  opacity: 0;
+  transform: translate(0, 0);
+transition: transform 5s ease-in-out, opacity 0.7s;
+  position: relative;
+}
+
+.brain img {
+  width: 100px;
+  z-index: 2;
+}
+
+/* Só essas regras são necessárias! */
+.left-item.in {
+  opacity: 1;
+  transform: translate(calc(-1 * var(--tx)), var(--ty));
+}
+.left-item.out {
+  opacity: 0;
+  transform: translate(0, 0);
+}
+
+.right-item.in {
+  opacity: 1;
+  transform: translate(var(--tx), var(--ty));
+}
+.right-item.out {
+  opacity: 0;
+  transform: translate(0, 0);
+}
+
