@@ -1,0 +1,49 @@
+.modelops-graph-wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 32px 0;
+  flex-wrap: wrap;
+}
+
+.modelops-graph-cyto {
+  width: 500px;
+  height: 350px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f8f8f8;
+  min-width: 320px;
+}
+
+.modelops-graph-details {
+  min-width: 220px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px #0001;
+}
+
+.modelops-graph-details h4 {
+  margin-top: 0;
+}
+
+.modelops-graph-details ul {
+  margin: 0 0 8px 16px;
+  padding: 0;
+}
+
+.modelops-graph-details b {
+  display: block;
+  margin-top: 8px;
+}
+
+.modelops-graph-details {
+  color: #222;
+  min-width: 300px;
+}
+
+.modelops-graph-details .empty {
+  color: #888;
+}

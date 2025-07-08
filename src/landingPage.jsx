@@ -1,13 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './App.css';
-import './index.css';
-import './footer.css';
-import './components/animation.css';
-import './components/splide.min.css';
+import './styles/App.css';
+import './styles/index.css';
+import './styles/footer.css';
+import './styles/animation.css';
+import './styles/splide.min.css';
 import Carrossel from './components/carrossel';
 import FlipText from './components/fliptext';
 import Animation from './components/animation';
 import Navbar from './components/Navbar';
+import ModelOpsGraph from './components/ModelOpsGraph';
 
 function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,7 +52,7 @@ function LandingPage() {
                   <button className='btn-container btn-container-secondary'><a href="#">Em DEV</a></button>
                 </div>
               </div>
-              <Animation />
+              <img src={process.env.PUBLIC_URL + "/img/Logo_ModelOps_Sem_Texto.svg"} alt="Carga inicial" />
             </div>
           </section>
           <section id='home-about'>
@@ -59,6 +60,7 @@ function LandingPage() {
             <p>Aproveite DBSync + Kafka para ler tópicos e reagir a eventos relevantes.</p>
             <Carrossel />
           </section>
+          <ModelOpsGraph />
           <section id='home-services'>
             <h2>Serviços</h2>
             <div className='services-container'>
@@ -114,6 +116,7 @@ function LandingPage() {
               </div>
             </div>
           </section>
+          <Animation />
         </main>
         <footer className="footer">
           <div className="footer-container">

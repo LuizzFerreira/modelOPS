@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './animation.css';
 
 const leftItems = [
   { src: process.env.PUBLIC_URL + "/iimg/planejamento.png", alt: "Eventos externos", tx: -190, ty: 120 },

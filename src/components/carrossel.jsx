@@ -1,5 +1,4 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import './splide.min.css';
 
 export default function Carrossel() {
   return (
