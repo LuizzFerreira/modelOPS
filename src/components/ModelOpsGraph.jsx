@@ -4,19 +4,20 @@ import cytoscape from "cytoscape";
 
 const elements = [
 
-  { data: { id: "usuario", label: "Usuário / Agentes" } },
-  { data: { id: "frontend", label: "Frontend" } },
-  { data: { id: "api", label: "API ModelOps" } },
-  { data: { id: "banco", label: "BD ModelOps\nMongoDB" } },
-  { data: { id: "modelos", label: "Modelos" } },
-  { data: { id: "cluster", label: "Cluster Efêmero" } },
-  { data: { id: "inputs", label: "Obtenção Inputs" } },
-  { data: { id: "execucao", label: "Execução Modelo" } },
-  { data: { id: "persistencia", label: "Persistência Outputs" } },
-  { data: { id: "publicacao", label: "Publicação Resultados" } },
-  { data: { id: "metadados", label: "Coleta Metadados" } },
-  { data: { id: "notificacao", label: "Notificação" } },
-  { data: { id: "produtos", label: "Produtos/Resultados" } },
+{ data: { id: "usuario", label: "Usuário / Agentes" }, position: { x: 50, y: 200 } },
+  { data: { id: "frontend", label: "Frontend" }, position: { x: 240, y: 200 } },
+  { data: { id: "api", label: "API ModelOps" }, position: { x: 430, y: 200 } },
+  { data: { id: "banco", label: "BD ModelOps\nMongoDB" }, position: { x: 620, y: 300 } },
+  { data: { id: "modelos", label: "Modelos" }, position: { x: 620, y: 100 } },
+  { data: { id: "cluster", label: "Cluster Efêmero" }, position: { x: 640, y: 200 } },
+  { data: { id: "inputs", label: "Obtenção Inputs" }, position: { x: 860, y: 200 } },
+  { data: { id: "execucao", label: "Execução Modelo" }, position: { x: 1050, y: 200 } },
+  { data: { id: "persistencia", label: "Persistência Outputs" }, position: { x: 1240, y: 200 } },
+  { data: { id: "publicacao", label: "Publicação Resultados" }, position: { x: 1430, y: 200 } },
+  { data: { id: "metadados", label: "Coleta Metadados" }, position: { x: 1240, y: 300 } },
+  { data: { id: "notificacao", label: "Notificação" }, position: { x: 1620, y: 100 } },
+  { data: { id: "produtos", label: "Produtos/Resultados" }, position: { x: 1620, y: 300 } },
+
 
   { data: { source: "usuario", target: "frontend" } },
   { data: { source: "frontend", target: "api" } },
@@ -132,12 +133,7 @@ export default function ModelOpsGraph() {
           }
         ],
         layout: {
-          name: "breadthfirst",
-          directed: true,
-          padding: 10,
-          spacingFactor: 1.2,
-          animate: false,
-          orientation: 'horizontal'
+          name: "preset"
         },
         autoungrabify: true 
       });
