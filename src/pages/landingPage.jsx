@@ -22,7 +22,7 @@ function LandingPage() {
                 </div>
                 <p className='sub-title'>Governança, automação e gestão completa de modelos inteligentes.</p>
                 <div>
-                  <button className='btn-container'><a href="#">Faturas Atuais</a></button>
+                  <button className='btn-container'><a href="#">Utilizar Sistema</a></button>
                   <button className='btn-container btn-container-secondary'><a href="#">Em DEV</a></button>
                 </div>
               </div>

@@ -5,7 +5,7 @@ import '../styles/criandoWorkflow.css';
 
 export default function CriandoWorkflow() {
   return (
-    <div className='body-area'>
+    <div className='body-area criando-workflow'>
       <main>
         <section className="home-container">
             <div>
