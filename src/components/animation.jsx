@@ -1,18 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const leftItems = [
-  { src: process.env.PUBLIC_URL + "/iimg/planejamento.png", alt: "Eventos externos", tx: -190, ty: 120 },
-  { src: process.env.PUBLIC_URL + "/iimg/operacao.png", alt: "Operação", tx: -190, ty: 60 },
-  { src: process.env.PUBLIC_URL + "/iimg/planejamento.png", alt: "Planejamento", tx: -190, ty: 0 },
-  { src: process.env.PUBLIC_URL + "/iimg/agentes.png", alt: "Agentes", tx: -190, ty: -60 },
-  { src: process.env.PUBLIC_URL + "/iimg/agendamento.png", alt: "Agendamento", tx: -190, ty: -120 },
+  { src: process.env.PUBLIC_URL + "/img/planejamento.png", alt: "Eventos externos", tx: -190, ty: 120 },
+  { src: process.env.PUBLIC_URL + "/img/operacao.png", alt: "Operação", tx: -190, ty: 60 },
+  { src: process.env.PUBLIC_URL + "/img/planejamento.png", alt: "Planejamento", tx: -190, ty: 0 },
+  { src: process.env.PUBLIC_URL + "/img/agentes.png", alt: "Agentes", tx: -190, ty: -60 },
+  { src: process.env.PUBLIC_URL + "/img/agendamento.png", alt: "Agendamento", tx: -190, ty: -120 },
 ];
 
 const rightItems = [
-  { src: "gerdin.png", alt: "GERDIN/SINapse", tx: 140, ty: -50 },
-  { src: "produto_dados.png", alt: "Produto de dados", tx: 140, ty: -15 },
-  { src: "interface_usuario.png", alt: "Interface de usuário", tx: 140, ty: 15 },
-  { src: "sintegre.png", alt: "Produto SINtegre", tx: 140, ty: 50 },
+  { src: "gerdin.png", alt: "GERDIN/SINapse", tx: 90, ty: -50 },
+  { src: "produto_dados.png", alt: "Produto de dados", tx: 90, ty: -15 },
+  { src: "interface_usuario.png", alt: "Interface de usuário", tx: 90, ty: 15 },
+  { src: "sintegre.png", alt: "Produto SINtegre", tx: 90, ty: 50 },
 ];
 
 const ModelOpsAnimation = () => {
@@ -37,8 +37,7 @@ const ModelOpsAnimation = () => {
     timeoutRef.current = setTimeout(() => setStage(0), 1000);
   }
 
-  return () => clearTimeout(timeoutRef.current);
-}, [stage]);
+  return () => clearTimeout(timeoutRef.current); }, [stage]);
 
   return (
     <div className="modelops-container">
@@ -48,15 +47,14 @@ const ModelOpsAnimation = () => {
             key={item.alt}
             src={item.src}
             alt={item.alt}
-            className={`left-item ${stage === 0 ? 'in' : stage === 1 ? 'move' :
-  'out'}`}
+            className={`left-item ${stage === 0 ? 'in' : stage === 1 ? 'move' : 'out'}`}
             style={{ '--tx': `${item.tx}px`, '--ty': `${item.ty}px` }}
           />
         ))}
       </div>
 
       <div className="brain">
-        <img src="/assets/cerebro.png" alt="ModelOps" />
+        <img src={process.env.PUBLIC_URL + "/img/Logo_ModelOps_Sem_Texto.svg"} alt="ModelOps" />
       </div>
 
       <div className="right-group">
@@ -65,9 +63,7 @@ const ModelOpsAnimation = () => {
             key={item.alt}
             src={item.src}
             alt={item.alt}
-            className={`right-item ${stage === 2 ? 'in' :
-  stage === 3 ? 'move' :
-  'out'}`}
+            className={`right-item ${stage === 2 ? 'in' : stage === 3 ? 'move' : 'out'}`}
             style={{ '--tx': `${item.tx}px`, '--ty': `${item.ty}px` }}
           />
         ))}

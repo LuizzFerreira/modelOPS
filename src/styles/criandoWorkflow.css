@@ -1,0 +1,7 @@
+.home-container > div > .home-container-text {
+    max-width: fit-content;
+}
+
+.home-container > div {
+    max-width: 910px;
+}

@@ -10,9 +10,9 @@ import ModelOpsGraph from '../components/ModelOpsGraph';
 function LandingPage() {
 
   return (  
-    <div id='body-area'>
+    <div className='body-area'>
         <main>
-          <section id="home-container">
+          <section className="home-container">
             <div>
               <div className='home-container-text'>
                 {/*<FlipText />*/}
