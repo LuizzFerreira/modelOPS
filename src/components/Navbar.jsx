@@ -23,9 +23,8 @@ export default function Navbar({ menuOpen, setMenuOpen, showNavbar, showContact,
     };
   }, [menuOpen, setMenuOpen, showContact, setShowContact]);
 
-  // Função para fechar menu e navegar para home, ideal para usar no logo e link "Início"
   function goToHome() {
-    navigate('/');
+    navigate('/modelOPS');
     setMenuOpen(false);
     setShowContact(false);
   }
@@ -33,7 +32,6 @@ export default function Navbar({ menuOpen, setMenuOpen, showNavbar, showContact,
   return (
     <nav className={`navbar${showNavbar ? '' : ' navbar--hidden'}`} ref={navRef}>
 
-      {/* Logo: navega para home, sem scroll manual aqui */}
       <img
         src={process.env.PUBLIC_URL + "/img/Logo_ModelOps_testo_lado.png"}
         alt="Logo"
@@ -58,7 +56,7 @@ export default function Navbar({ menuOpen, setMenuOpen, showNavbar, showContact,
       <ul id="primary-navigation" className={menuOpen ? "open" : ""}>
 
         <li>
-          <Link to="/" onClick={goToHome}>Início</Link>
+          <Link to="/modelOPS" onClick={goToHome}>Início</Link>
         </li>
 
         <li
