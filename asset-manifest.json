@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/modelOPS/static/css/main.622e8f5f.css",
-    "main.js": "/modelOPS/static/js/main.75e7b629.js",
+    "main.css": "/modelOPS/static/css/main.648f96bf.css",
+    "main.js": "/modelOPS/static/js/main.30c31fb2.js",
     "static/js/453.44d04740.chunk.js": "/modelOPS/static/js/453.44d04740.chunk.js",
+    "static/media/noah-bold.otf": "/modelOPS/static/media/noah-bold.256b3015a8d624c9c483.otf",
+    "static/media/noah-bolditalic.otf": "/modelOPS/static/media/noah-bolditalic.ae2a1bae44839bdb8d03.otf",
+    "static/media/noah-regularitalic.otf": "/modelOPS/static/media/noah-regularitalic.660728d3bd4fa23962bc.otf",
+    "static/media/noah-regular.otf": "/modelOPS/static/media/noah-regular.a666820b03e3ba7ab065.otf",
     "index.html": "/modelOPS/index.html",
-    "main.622e8f5f.css.map": "/modelOPS/static/css/main.622e8f5f.css.map",
-    "main.75e7b629.js.map": "/modelOPS/static/js/main.75e7b629.js.map",
+    "main.648f96bf.css.map": "/modelOPS/static/css/main.648f96bf.css.map",
+    "main.30c31fb2.js.map": "/modelOPS/static/js/main.30c31fb2.js.map",
     "453.44d04740.chunk.js.map": "/modelOPS/static/js/453.44d04740.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.622e8f5f.css",
-    "static/js/main.75e7b629.js"
+    "static/css/main.648f96bf.css",
+    "static/js/main.30c31fb2.js"
   ]
 }
