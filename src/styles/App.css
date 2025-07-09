@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'noah-bold';
+  src: url('/src/Fonts/noah-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'noah-bolditalic';
+  src: url('/src/Fonts/noah-bolditalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'noah-regular';
+  src: url('/src/Fonts/noah-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'noah-regularitalic';
+  src: url('/src/Fonts/noah-regularitalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'noah-regular', Arial, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+#body-area > main {
+  padding-top: 87px;
+}

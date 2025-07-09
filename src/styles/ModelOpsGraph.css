@@ -47,3 +47,9 @@
 .modelops-graph-details .empty {
   color: #888;
 }
+
+@media (max-width: 800px) {
+  .modelops-graph-wrapper {
+    padding: 0 20px;
+  }
+}

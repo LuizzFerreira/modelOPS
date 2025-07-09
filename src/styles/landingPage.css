@@ -1,14 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
-a{
-  text-decoration: none;
-  color: inherit;
-}
-
-
 #body-area{
   display: flex;
   flex-direction: column;
@@ -16,75 +5,6 @@ a{
   background: #ffffff;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-}
-
-#body-area > main {
-  padding-top: 71px;
-}
-
-.navbar{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  color: rgb(0, 0, 0);
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background: #ffffff;
-  border-bottom: #dbdbdb 1px solid;
-  min-height: 30px;
-  transition: top 0.3s ease;
-  z-index: 999;
-  transition: top 0.3s cubic-bezier(.77,0,.18,1);
-}
-
-.navbar--hidden {
-  top: -100px;
-}
-
-.navbar > ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  margin: auto;
-}
-
-.navbar > ul > li > a{
-  font-size: 17px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-}
-
-.navbar > ul > li > a:hover {
-  color: #546223;
-}
-
-.navbar > ul > li > a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-.navbar > img {
-  position: absolute;
-}
-.navbar > ul > li > a {
-  position: relative;
-  transition: color 0.2s;
-}
-
-.navbar > ul > li > a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 100%;
-  height: 2px;
-  background: #546223;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s cubic-bezier(.77,0,.18,1);
 }
 
 #home-container {
@@ -96,7 +16,7 @@ a{
 }
 #home-container > div {
   display: flex;
-  max-width: 850px;
+  max-width: 700px;
   margin: auto;
   width: 100%;
   justify-content: space-between;
@@ -110,14 +30,29 @@ a{
   max-width: 300px;
 }
 
-#home-container > div > .home-container-text > div {
+#home-container > div > .home-container-text > div:nth-child(3) {
   display: flex;
   gap: 20px;
   margin-top: 30px;
 }
 
+#home-container > div > .home-container-text > div > img {
+  width: 114px;
+}
+
+#home-container > div > .home-container-text > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#home-container > div > .home-container-text > div > h1 {
+  font-family: 'noah-bold';
+  font-size: 50px;
+}
+
 #home-container > div > img{
-  width: 226px;
+  width: 178px;
   height: auto;
 }
 
@@ -266,35 +201,14 @@ a{
 }
 
 .slide-updates > div > img {
-  width: 50px;
-}
-
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 32px;
-  height: 43px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-.menu-toggle .bar {
-  width: 100%;
-  height: 4px;
-  background: #222;
-  border-radius: 2px;
-  transition: 0.3s;
+  width: 40px;
 }
 
 .contact-slide {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 0;
+  top: 87px;
   right: 0;
   padding: 10px;
   background: #fff;
@@ -320,45 +234,12 @@ a{
 }
 
 @media (max-width: 800px) {
-  .navbar {
-    justify-content: center;
-    padding: 10px 10px;
-  }
-
-  .menu-toggle {
-    display: flex;
-    position: absolute;
-    right: 35px;
-    top: 5px;
-  }
-  .navbar > ul {
-    display: none;
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    width: 180px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    border-radius: 8px;
-    padding: 20px 0;
-    z-index: 1000;
-  }
-  .navbar > ul.open {
-    display: flex;
-  }
-  .navbar > ul > li {
-    width: 100%;
-    text-align: left;
-    padding: 10px 20px;
-  }
-
   #body-area > main {
-    padding-top: 0;
+    padding-top: 67px;
   }
 
   #home-container{
-    padding: 100px 0;
+    padding: 20px 0;
   }
 
   #home-container > div,
@@ -397,6 +278,10 @@ a{
     font-size: 23px;
   }
 
+  #home-about {
+    margin: 40px 20px 70px;
+  }
+
   #home-services > h2 {
     font-size: 26px;
   }
@@ -408,5 +293,31 @@ a{
   .splide__arrow--next,
   .splide__arrow--prev {
     display: none !important;
+  }
+
+  #home-container > div > .home-container-text > div > h1 {
+    font-size: 28px;
+  }
+
+  #home-container > div > .home-container-text > div > img {
+    width: 63px;
+  }
+
+  #home-container > div > .home-container-text > div {
+    gap: 10px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+  }
+
+  #home-container > div > img {
+    order: -1;
+    width: 85px;
+    height: auto;
+  }
+
+  #home-container > div > .home-container-text > div:nth-child(3) {
+    margin-top: 10px;
   }
 }

@@ -17,31 +17,31 @@ export default function Carrossel() {
       >
         <SplideSlide className='slide-updates'>
           <div>
-            <img src={process.env.PUBLIC_URL + "/img/carga-inicial.png"} alt="Imagem Carga Inicial" />
-            <p className='title-slide'>Carga inicial</p>
+            <img src={process.env.PUBLIC_URL + "/img/Eficiencia_Operacional.png"} alt="Imagem Eficiência Operacional" />
+            <p className='title-slide'>Eficiência Operacional</p>
           </div>
-          <p>Inicie a primeira carga do sistema, levando dados da origem para o destino, usando uma interface amigável.</p>
+          <p>Redução significativa no tempo de preparação, execução e extração de resultados</p>
         </SplideSlide>
         <SplideSlide className='slide-updates'>
           <div>
             <img src={process.env.PUBLIC_URL + "/img/code-img.png"} alt="Imagem Low-Code" />
-            <p className='title-slide'>Low-code</p>
+            <p className='title-slide'>Transparência</p>
           </div>
-          <p>Gerencie suas sincronizações via interface, usando código somente para personalizar sua carga inicial.</p>
+          <p>Rastreabilidade completa de todas as execuções e versões de modelos</p>
         </SplideSlide>
         <SplideSlide className='slide-updates'>
           <div>
             <img src={process.env.PUBLIC_URL + "/img/setas-icone.png"} alt="Imagem Replicação" />
-            <p className='title-slide'>Replicação</p>
+            <p className='title-slide'>Otimização de Recursos</p>
           </div>
-          <p>Sincronização de dados robusta e escalável com o uso do DEBEZIUM e da infraestrutura do OPENSHIFT.</p>
+          <p>Diminuição dos custos computacionais e de armazenamento</p>
         </SplideSlide>
         <SplideSlide className='slide-updates'>
           <div>
-            <img src={process.env.PUBLIC_URL + "/img/suporte-icon.png"} alt="Imagem Suporte" />
-            <p className='title-slide'>Suporte 24/7</p>
+            <img src={process.env.PUBLIC_URL + "/img/Produtividade.png"} alt="Imagem Suporte" />
+            <p className='title-slide'>Produtividade</p>
           </div>
-          <p>A plataforma adota a observabilidade, envia alertas via Telegram, e-mail e outros. Está no sobreaviso para dar suporte aos times.</p>
+          <p>Eliminação de retrabalhos e processos manuais repetitivos</p>
         </SplideSlide>
       </Splide>
     </div>
