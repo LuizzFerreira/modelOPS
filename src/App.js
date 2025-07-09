@@ -34,7 +34,7 @@ export default function App() {
           <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} showNavbar={showNavbar} showContact={showContact} setShowContact={setShowContact}/>
       </header>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/modelOPS" element={<LandingPage />} />
         <Route path="/criandoWorkflow" element={<CriandoWorkflow />} />
         <Route path="/executandoWorkflow" element={<ExecutandoWorkflow />} />
       </Routes>
