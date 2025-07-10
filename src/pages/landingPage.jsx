@@ -5,7 +5,6 @@ import '../styles/animation.css';
 import '../styles/splide.min.css';
 import '../styles/navbar.css';
 import Carrossel from '../components/carrossel';
-import ModelOpsGraph from '../components/ModelOpsGraph';
 
 function LandingPage() {
 
@@ -16,13 +15,13 @@ function LandingPage() {
             <div>
               <div className='home-container-text'>
                 {/*<FlipText />*/}
-                <div>
+                <div className='logo-modelOps'>
                   <img src={process.env.PUBLIC_URL + "/img/Marca_Modelops.png"} alt="Logo ONS" />
                   <h1>ModelOPS</h1>
                 </div>
                 <p className='sub-title'>Governança, automação e gestão completa de modelos inteligentes.</p>
                 <div>
-                  <button className='btn-container'><a href="#">Utilizar Sistema</a></button>
+                  <button className='btn-container'><a href="https://modelops-ui-modelops-tst.apps.rosa.rosa-dev.wmaj.p3.openshiftapps.com/dashboard">Utilizar Sistema</a></button>
                   <button className='btn-container btn-container-secondary'><a href="#">Em DEV</a></button>
                 </div>
               </div>
@@ -33,12 +32,11 @@ function LandingPage() {
             <h2>Principais <span>Benefícios</span></h2>
             <Carrossel />
           </section>
-          <ModelOpsGraph />
           <section id='home-services'>
             <h2>Serviços</h2>
             <div className='services-container'>
               <div className='service-item'>
-                <img src={process.env.PUBLIC_URL + "/img/DBSyncDataCapcity.png"} alt="Carga inicial" />
+                <img src={process.env.PUBLIC_URL + "/img/esboço_modelOps.png"} alt="Carga inicial" />
                 <div>
                   <h3>Amplie o poder dos seus dados</h3>
                   <p>Seus dados são alterados o tempo todo.

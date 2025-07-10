@@ -2,7 +2,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 export default function Carrossel() {
   return (
-    <div style={{ width: '100%', maxWidth: '600px', margin: '0 auto' }}>
+    <div style={{ width: '100%', maxWidth: '676px', margin: '0 auto' }}>
       <Splide
         options={{
           type: 'loop',

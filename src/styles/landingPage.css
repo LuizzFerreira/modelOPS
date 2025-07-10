@@ -75,8 +75,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 750px;
-  gap: 50px;
+  max-width: 850px;
+  gap: 60px;
 }
 
 .services-container > .service-item {

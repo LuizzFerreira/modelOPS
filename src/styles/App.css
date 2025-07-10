@@ -35,6 +35,10 @@ body {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -82,17 +86,19 @@ a{
   margin-top: 30px;
 }
 
-.home-container > div > .home-container-text > div > img {
+.logo-modelOps > img {
   width: 114px;
+  height: auto;
 }
 
-.home-container > div > .home-container-text > div {
+.logo-modelOps {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.home-container > div > .home-container-text > div > h1 {
+.home-container > div > .home-container-text > div > h1,
+.logo-modelOps > h2 {
   font-family: 'noah-bold';
   font-size: 50px;
 }
@@ -117,6 +123,12 @@ a{
   border-radius: 7px;
   padding: 10px;
   font-weight: 500;
+}
+
+.splide__arrow {
+  width: 4em !important;
+  height: 4em !important;
+  background: none;
 }
 
 @media (max-width: 800px) {
